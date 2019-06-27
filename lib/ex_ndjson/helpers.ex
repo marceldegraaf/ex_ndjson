@@ -12,6 +12,6 @@ defmodule ExNdjson.Helpers do
 
   @spec json_library() :: atom | nil
   def json_library do
-    Application.get_env(:ex_ndjson, :json_library)
+    Application.get_env(:ex_ndjson, :json_library, Jason)
   end
 end
